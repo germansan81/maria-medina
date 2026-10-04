@@ -131,7 +131,7 @@
   padding-bottom:env(safe-area-inset-bottom,0px);
 }
 *,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:calc(84px + env(safe-area-inset-top,0px))}
+html{scroll-behavior:smooth;scroll-padding-top:calc(92px + env(safe-area-inset-top,0px))}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{margin:0;background:#fff;color:var(--tinta);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
 img,svg{max-width:100%;display:block}
@@ -147,11 +147,11 @@ p{margin:0}
 
 /* Encabezado */
 .encabezado{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--linea)}
-.encabezado .contenedor{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+.encabezado .contenedor{display:flex;align-items:center;justify-content:space-between;gap:24px;height:84px}
 .marca{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--azul)}
-.marca svg{width:58px;height:auto}
+.marca svg{width:84px;height:auto}
 .marca-texto{display:flex;flex-direction:column;line-height:1.1}
-.marca-nombre{font-family:var(--serif);font-size:19px}
+.marca-nombre{font-family:var(--serif);font-size:20px}
 .marca-titulo{font-size:10px;font-weight:600;letter-spacing:.28em;margin-top:4px}
 .menu{display:flex;align-items:center;gap:28px}
 .menu a{text-decoration:none;color:var(--tinta);font-size:15px;font-weight:500}
@@ -285,7 +285,7 @@ details p{padding:0 0 24px;color:var(--suave);max-width:40em}
 .flotante svg{width:36px;height:36px}
 
 @media (max-width:900px){
-  .menu{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 20px;border-bottom:1px solid var(--linea)}
+  .menu{display:none;position:absolute;top:84px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 20px;border-bottom:1px solid var(--linea)}
   .menu.abierto{display:flex}
   .menu a{padding:14px 0;border-bottom:1px solid var(--linea)}
   .menu .boton{margin-top:14px;border-bottom:0}
@@ -318,8 +318,9 @@ details p{padding:0 0 24px;color:var(--suave);max-width:40em}
   <div class="contenedor">
     <a class="marca" href="#inicio" aria-label="María Paula Medina, inicio">
       <svg viewBox="12 40 282 165" aria-hidden="true">
-        <path d="M22 40H29V200H22ZM22 40L42 40 92 200 80 200ZM86 200L92 200 140 40 134 40ZM134 40H152V200H134ZM216 40H234V200H216ZM234 40H246A45 45 0 0 1 246 130H234V116H246A31 31 0 0 0 246 54H234Z" fill="#1E3A5F"/>
-        <path d="M168 118H184V200H168ZM192 84H208V200H192ZM12 200H294V205H12Z" fill="#C8962E"/>
+        <path d="M22 40H29V200H22ZM22 40L42 40 92 200 80 200ZM86 200L92 200 140 40 134 40ZM134 40H152V200H134ZM234 40H246A45 45 0 0 1 246 130H234V116H246A31 31 0 0 0 246 54H234Z" fill="#1E3A5F"/>
+        <path d="M216 40H234V184H216ZM220.5 68a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0-9 0ZM216 186.5H234V200H216Z" fill="#1E3A5F" fill-rule="evenodd"/>
+        <path d="M168 118H184V184H168ZM171.5 132a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0-9 0ZM168 186.5H184V200H168ZM192 84H208V184H192ZM195.5 98a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0-9 0ZM192 186.5H208V200H192ZM12 200H294V205H12Z" fill="#C8962E" fill-rule="evenodd"/>
       </svg>
       <span class="marca-texto"><span class="marca-nombre">María Paula Medina</span><span class="marca-titulo">CONTADORA PÚBLICA</span></span>
     </a>
@@ -349,7 +350,7 @@ details p{padding:0 0 24px;color:var(--suave);max-width:40em}
         </div>
       </div>
       <div class="hero-foto">
-        <img src="/maria-paula-medina-contadora-medellin.jpg" width="960" height="1200" alt="María Paula Medina, contadora pública, sonriendo con blazer gris">
+        <img src="/maria-paula-medina-contadora-medellin.jpg" width="853" height="1066" alt="María Paula Medina, contadora pública, sonriendo con blazer gris">
       </div>
     </div>
     <div class="estante" aria-hidden="true"></div>
